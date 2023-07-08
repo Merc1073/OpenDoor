@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfecab7dfd81d7c499e9c407dc8a8927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7212964633037586062}
 --- !u!135 &75939362
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -739,6 +740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfecab7dfd81d7c499e9c407dc8a8927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7212964633037586062}
 --- !u!135 &783698528
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -977,6 +979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfecab7dfd81d7c499e9c407dc8a8927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7212964633037586062}
 --- !u!135 &1229735176
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1333,6 +1336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfecab7dfd81d7c499e9c407dc8a8927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7212964633037586062}
 --- !u!135 &1783895770
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1431,9 +1435,10 @@ GameObject:
   - component: {fileID: 1810568835}
   - component: {fileID: 1810568834}
   - component: {fileID: 1810568833}
+  - component: {fileID: 1810568837}
   m_Layer: 0
-  m_Name: Cube (6)
-  m_TagString: Untagged
+  m_Name: Door
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1524,6 +1529,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1810568837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810568832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7a97128411dd847822acd142c9bbe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7212964633037586062}
 --- !u!1 &1929598661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfecab7dfd81d7c499e9c407dc8a8927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7212964633037586062}
 --- !u!54 &1929598667
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1868,6 +1887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  Coins: 0
 --- !u!54 &7212964633037586067
 Rigidbody:
   m_ObjectHideFlags: 0

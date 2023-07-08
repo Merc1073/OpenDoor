@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    public Player player;
+
     void Update()
     {
-        
+        if(player.GetComponent<Player>().Coins == 5)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
