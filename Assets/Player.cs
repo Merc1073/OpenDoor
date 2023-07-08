@@ -5,9 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-  public float speed = 10f;
+   public float speed = 100f;
 
-   public int coins;
+
+   public static int Coins;
 
 
     void Update()

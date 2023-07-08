@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static Player;
 
 public class Coin : MonoBehaviour
 {
+
+     
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +22,17 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "Cube")
+        if (this.gameObject)
         {
-            Debug.Log("Coin");
-            Destroy(this.gameObject);
+            if (collision.gameObject.tag == "Cube")
+            {
+                Debug.Log("Coin");
+                Destroy(this.gameObject);
+                Coins += 1;
+                Debug.Log(Coins);
+            }
         }
+      
     }
 
 }
