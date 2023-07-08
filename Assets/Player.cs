@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 
   public float speed = 10f;
 
+   public int coins;
+
 
     void Update()
     {

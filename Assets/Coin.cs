@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    float s = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +17,13 @@ public class Coin : MonoBehaviour
     {
     }
 
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.name == "Cube")
+        if (collision.gameObject.tag == "Cube")
         {
-            
+            Debug.Log("Coin");
+            Destroy(this.gameObject);
         }
     }
+
 }
