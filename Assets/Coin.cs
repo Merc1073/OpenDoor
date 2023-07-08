@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static Player;
+//using static Player;
 
 public class Coin : MonoBehaviour
 {
 
-     
+    public Player player;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,11 @@ public class Coin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        //Debug.Log(player.GetComponent<Player>().Coins);
+
+
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -28,8 +33,8 @@ public class Coin : MonoBehaviour
             {
                 Debug.Log("Coin");
                 Destroy(this.gameObject);
-                Coins += 1;
-                Debug.Log(Coins);
+                player.GetComponent<Player>().Coins += 1;
+                Debug.Log(player.GetComponent<Player>().Coins);
             }
         }
       
