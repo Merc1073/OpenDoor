@@ -5,13 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
+    float speed = 10f;
+
+
     void Update()
     {
-        //Hello Sergei!!!!!!!!!!!!!
 
-        //Test test test
 
-        //helllo again
+        transform.position += new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * speed * Time.deltaTime;
+
+        
     }
     
 }
